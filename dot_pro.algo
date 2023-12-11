@@ -1,0 +1,96 @@
+ALGORITHM algorithm_name
+VAR
+
+v1 : INTEGER[3];
+v2 : INTEGER[3];
+result:=INTEGER;
+length:=INTEGER;
+//sum:=INTEGER;
+
+    set_declarations
+BEGIN
+
+    v1:={ 1,4, 8};
+    v2:={ 5, 2,9};
+    result:= dot_product(v1[]; v2[]; length);
+END
+
+ FUNCTION dot_product(v1[length]; v2[length]; length)
+ VAR
+ sum:=INTEGER;
+    sum:=0;
+ BEGIN
+    IF ( i:=0; i<length; i++) THEN
+        sum =  sum + v1[i]*v2[i];
+        return sum:=INTEGER;
+    END_IF
+    
+    RETURN sum;
+
+
+    PROCEDURE dotpro_result(v1[length]; v2[length]; length)
+    VAR
+        set_declarations
+    BEGIN
+        FOR i FROM 0 TO i<length STEP 1  DO
+            IF (result == 0) THEN
+            write(" dot product est null:" + result);
+            write ("Ces deuc vecteurs sont orthogonaux:")
+                
+            ELSE
+                set_instructions
+                  write("Le dot product n'est pas null:" + result);
+                  write ("Ces deux vecteurs ne sont pas orthogonaux:")
+            END_IF
+        END_FOR
+    END
+ END
+
+
+
+
+
+
+
+
+ALGORITHM tri_par_Insertion
+
+VAR
+numbres:=INTEGER[10];
+length:=INTEGER;
+var_temp: INTEGER;  
+
+
+BEGIN
+
+numbres:={ 6, 3, 8,0, 2, 9,1, 4, 7, 5};
+
+FOR (i:=0; i<length-1, i++) STEP 1 DO
+{
+    
+    IF (a[j]> a[j+1]) THEN
+    { temp:= a[j]
+    a[j] = a[j+1]
+    a[j+1]= temp;
+    }
+    END_IF
+
+END_FOR
+}
+
+FOR (i:= 0, i<length, i++)  DO
+{
+write {"Chiffres trie et mis en ordre:" + a[i] + " "};
+}
+
+END_FOR
+END
+
+
+
+
+
+
+
+
+
